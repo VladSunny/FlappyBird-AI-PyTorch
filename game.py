@@ -64,7 +64,7 @@ class FlappyBirdGame:
             
             if not pipe.done and self.bird.x > pipe.x + pipe.w:
                 self.score += 1
-                reward = 40
+                reward = 20
                 pipe.done = True
 
             if self.bird.y + self.bird.h > self.h:
@@ -78,7 +78,7 @@ class FlappyBirdGame:
                     game_over = True
                     break
                 else:
-                    reward = 20
+                    reward = 10
 
         # if action == [0, 1]:
         #     reward = 100
